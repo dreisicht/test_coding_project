@@ -1,8 +1,4 @@
 class Solution:
-
-  def __init__(self):
-    pass
-
   def romanToInt(self, roman_str: str) -> int:
     conversion_table = {
         "I": 1,
@@ -22,6 +18,9 @@ class Solution:
     int_list_sum += conversion_table[roman_str[-1]]
 
     return int_list_sum
+
+  def do_something_else(self):
+    print("Doing something else.")
 
 
 sol_instance = Solution()
