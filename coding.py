@@ -1,5 +1,8 @@
 class Solution:
 
+  def __init__(self):
+    pass
+
   def romanToInt(self, s: str) -> int:
     conversion_table = {
         "I": 1,
