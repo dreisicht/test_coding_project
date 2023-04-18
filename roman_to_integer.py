@@ -1,5 +1,11 @@
+"""Class from leetcode to convert between roman and integer numbers."""
+
+
 class Solution:
-  def romanToInt(self, roman_str: str) -> int:
+  """Class to be able to test the code on leetcode."""
+
+  def roman_to_int(self, roman_str: str) -> int:
+    """Converts a roman number to an integer."""
     conversion_table = {
         "I": 1,
         "V": 5,
@@ -20,9 +26,5 @@ class Solution:
     return int_list_sum
 
   def do_something_else(self):
+    """Second method to avoid the error of only having one method on the class."""
     print("Doing something else.")
-
-
-sol_instance = Solution()
-print(sol_instance.romanToInt("MXI") == 1011)
-print(sol_instance.romanToInt("MIX") == 1009)
