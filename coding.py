@@ -3,7 +3,7 @@ class Solution:
   def __init__(self):
     pass
 
-  def romanToInt(self, s: str) -> int:
+  def romanToInt(self, roman_str: str) -> int:
     conversion_table = {
         "I": 1,
         "V": 5,
@@ -14,12 +14,12 @@ class Solution:
         "M": 1000,
     }
     int_list_sum = 0
-    for i in range(len(s) - 1):
-      if conversion_table[s[i + 1]] > conversion_table[s[i]]:
-        int_list_sum -= conversion_table[s[i]]
+    for i in range(len(roman_str) - 1):
+      if conversion_table[roman_str[i + 1]] > conversion_table[roman_str[i]]:
+        int_list_sum -= conversion_table[roman_str[i]]
         continue
-      int_list_sum += conversion_table[s[i]]
-    int_list_sum += conversion_table[s[-1]]
+      int_list_sum += conversion_table[roman_str[i]]
+    int_list_sum += conversion_table[roman_str[-1]]
 
     return int_list_sum
 
