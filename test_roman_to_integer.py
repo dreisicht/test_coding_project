@@ -4,6 +4,8 @@ from roman_to_integer import Solution
 
 
 class TestRomanToInteger(TestCase):
+  """Unit test for roman to integer."""
+
   def setUp(self) -> None:
     self.sol_instance = Solution()
     return super().setUp()
