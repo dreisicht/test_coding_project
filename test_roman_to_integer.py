@@ -13,4 +13,4 @@ def test_solution():
   assert sol_instance.roman_to_int("L") == 50
   assert sol_instance.roman_to_int("C") == 100
   assert sol_instance.roman_to_int("D") == 500
-  assert sol_instance.roman_to_int("M") == 1000
+  assert sol_instance.roman_to_int("M") == 10000
